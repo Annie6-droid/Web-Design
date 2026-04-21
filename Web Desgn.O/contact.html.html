@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Oracle's Creative Space</title>
+    <style>
+        body {
+            background-color: purple; /* Keeps your successful background */
+            font-family: "Times New Roman", Times, serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            text-decoration: underline;
+        }
+
+        /* Container for the form to keep it centered and readable */
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto; /* Centers the form block */
+            text-align: left; /* Left-aligns the labels inside the centered box */
+        }
+
+        /* Makes labels and inputs behave as vertical blocks */
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px; /* Space between fields */
+            border: 1px solid white;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 5px;
+            box-sizing: border-box; /* Crucial for padding to fit 100% width */
+        }
+
+        form textarea {
+            height: 100px; /* Sets a default height for the message box */
+            resize: vertical; /* Allows users to resize vertically only */
+        }
+
+        /* Styling for the Send button to make it centered and rounded */
+        .submit-btn {
+            background-color: white;
+            color: purple;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 25px; /* Rounded button look like your drawing */
+            transition: background 0.3s ease;
+            display: block;
+            margin: 0 auto; /* Centers the button */
+        }
+
+        .submit-btn:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+
+<form>
+  <label>Name:</label>
+  <input type="text" name="name" required>
+
+  <label>Email:</label>
+  <input type="email" name="email" required>
+
+  <label>Phone:</label>
+  <input type="tel" name="phone">
+
+  <label>Message:</label>
+  <textarea name="message"></textarea>
+
+  <button type="submit">Send</button>
+</form>
